@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="wrapper">
+    <label>What is your user name?</label>
+    <input
+      type="text"
+      [(ngModel)]="userName"
+    />
+    <p>{{ userName }}</p>
+    <button
+      [disabled]="userName === ''"
+      (click)="onUserFormSubmit()"
+    >Submit</button>
+  </div>
+</div>
